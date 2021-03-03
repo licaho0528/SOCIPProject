@@ -1,0 +1,14 @@
+cn\ekgc\socip\base\pojo\vo\QueryVO.class
+cn\ekgc\socip\base\util\MD5Util.class
+cn\ekgc\socip\base\pojo\vo\PageVO.class
+cn\ekgc\socip\base\util\IdGenerator.class
+cn\ekgc\socip\base\pojo\entity\BaseEntity.class
+cn\ekgc\socip\base\pojo\enums\ResponseCodeEnum.class
+cn\ekgc\socip\base\util\BaseConstantUtil.class
+cn\ekgc\socip\base\pojo\enums\StatusEnum.class
+cn\ekgc\socip\base\util\JsonUtil.class
+cn\ekgc\socip\role\pojo\entity\Role.class
+cn\ekgc\socip\base\controller\BaseController.class
+cn\ekgc\socip\base\pojo\vo\ResponseVO.class
+cn\ekgc\socip\base\util\TokenUtil.class
+cn\ekgc\socip\base\pojo\enums\SystemEnumConstants.class

@@ -1,0 +1,20 @@
+### 配置项目占用端口号
+server:
+  port: 9999
+## 配置项目应用名
+spring:
+  application:
+    name: socip-registry-center
+## 配置 Eureka Server
+eureka:
+  ##设定 host 信息
+  instance:
+    hostname: localhost
+  client:
+    ## 禁止注册中心取其他注册中心进行服务发现
+    fetch-registry: false
+    ## 禁止注册中心注册自己的服务
+    register-with-eureka: false
+    ## 设定注册中心暴露地址
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka

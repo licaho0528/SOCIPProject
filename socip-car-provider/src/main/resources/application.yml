@@ -1,0 +1,10 @@
+### 配置项目启动端口号
+server:
+  port: 33355
+### 配置项目应用名
+spring:
+  application:
+    name: socip-car-consumer
+    ### 项目加载文件配置
+  profiles:
+    active: client, data

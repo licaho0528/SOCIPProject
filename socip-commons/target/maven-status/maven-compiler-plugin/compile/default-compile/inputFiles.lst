@@ -1,0 +1,14 @@
+D:\Project\IDEA\SOCIPProject\socip-commons\src\main\java\cn\ekgc\socip\base\util\MD5Util.java
+D:\Project\IDEA\SOCIPProject\socip-commons\src\main\java\cn\ekgc\socip\base\util\JsonUtil.java
+D:\Project\IDEA\SOCIPProject\socip-commons\src\main\java\cn\ekgc\socip\base\pojo\entity\BaseEntity.java
+D:\Project\IDEA\SOCIPProject\socip-commons\src\main\java\cn\ekgc\socip\base\pojo\enums\ResponseCodeEnum.java
+D:\Project\IDEA\SOCIPProject\socip-commons\src\main\java\cn\ekgc\socip\base\util\TokenUtil.java
+D:\Project\IDEA\SOCIPProject\socip-commons\src\main\java\cn\ekgc\socip\base\pojo\enums\SystemEnumConstants.java
+D:\Project\IDEA\SOCIPProject\socip-commons\src\main\java\cn\ekgc\socip\base\pojo\vo\QueryVO.java
+D:\Project\IDEA\SOCIPProject\socip-commons\src\main\java\cn\ekgc\socip\base\util\BaseConstantUtil.java
+D:\Project\IDEA\SOCIPProject\socip-commons\src\main\java\cn\ekgc\socip\base\util\IdGenerator.java
+D:\Project\IDEA\SOCIPProject\socip-commons\src\main\java\cn\ekgc\socip\base\controller\BaseController.java
+D:\Project\IDEA\SOCIPProject\socip-commons\src\main\java\cn\ekgc\socip\base\pojo\vo\ResponseVO.java
+D:\Project\IDEA\SOCIPProject\socip-commons\src\main\java\cn\ekgc\socip\base\pojo\vo\PageVO.java
+D:\Project\IDEA\SOCIPProject\socip-commons\src\main\java\cn\ekgc\socip\base\pojo\enums\StatusEnum.java
+D:\Project\IDEA\SOCIPProject\socip-commons\src\main\java\cn\ekgc\socip\role\pojo\entity\Role.java

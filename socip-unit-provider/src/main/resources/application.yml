@@ -1,0 +1,10 @@
+### 配置项目占用端口号
+server:
+  port: 22233
+### 配置项目应用名
+spring:
+  application:
+    name: socip-unit-provider
+  ## 配置加载文件
+  profiles:
+    active: client, data
