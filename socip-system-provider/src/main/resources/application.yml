@@ -7,4 +7,4 @@ spring:
     name: socip-system-provider
     ### 项目加载配置文件
   profiles:
-    active: client, data
+    active: client, datasource

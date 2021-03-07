@@ -3,13 +3,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>cn.ekgc.soocip</groupId>
 	<artifactId>socip-system-consumer</artifactId>
+	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
-	<!-- 项目父级依赖关系 -->
+	<!-- 项目父级依赖 socip Parent -->
 	<parent>
-		<artifactId>socip-parent</artifactId>
 		<groupId>cn.ekgc.socip</groupId>
+		<artifactId>socip-parent</artifactId>
 		<version>1.0.0</version>
 	</parent>
 
@@ -20,12 +23,14 @@
 	</properties>
 
 	<dependencies>
-		<!-- 配置 Socip Commons 依赖关系-->
+
+		<!-- 配置 Socip Commnos 依赖关系 -->
 		<dependency>
 			<groupId>cn.ekgc.socip</groupId>
 			<artifactId>socip-commons</artifactId>
-			<version>${parent.version}</version>
+			<version>1.0.0</version>
 		</dependency>
+
 
 		<dependency>
 			<groupId>junit</groupId>

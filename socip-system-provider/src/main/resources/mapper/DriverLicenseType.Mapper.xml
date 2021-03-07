@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.ekgc.socip.driver.dao.DriverLicenseTypeDao">
+	<select id="findListByQuery" parameterType="DriverLicenseType" resultMap="resultMap">
+		SELECT
+			sdl.id, 
+			sdl.text, 
+			sdl.code, 
+			sdl.status, 
+			sdl.createUser, 
+			sdl.createTime, 
+			sdl.updateUser, 
+			sdl.updateTime
+		FROM
+			sys_driver_license_type AS sdl
+		<where>
+			<trim suffixOverrides="and">
+				<if test="id != null">sdl.id=#{id} and </if>
+				<if test="text != null">sdl.text like concat('%', #{text}, '%') and </if>
+				<if test="code != null">sdl.code=#{code} and </if>
+				<if test="status != null">sdl.status=#{status} and </if>
+			</trim>
+		</where>
+	</select>
+
+	<insert id="save" parameterType="DriverLicenseType">
+		insert into sys_driver_license_type(
+			<trim suffixOverrides=",">
+				<if test="id != null">id, </if>
+				<if test="text != null">text, </if>
+				<if test="code != null">code, </if>
+				<if test="status != null">status, </if>
+				<if test="createUser != null">createUser, </if>
+				<if test="createTime != null">createTime, </if>
+				<if test="updateUser != null">updateUser,</if>
+				<if test="updateTime != null">updateTime,</if>
+			</trim>
+		) values (
+			<trim suffixOverrides=",">
+				<if test="id != null">#{id}, </if>
+				<if test="text != null">#{text}, </if>
+				<if test="code != null">#{code}, </if>
+				<if test="status != null">#{status}, </if>
+				<if test="createUser != null">#{createUser}, </if>
+				<if test="createTime != null">#{createTime}, </if>
+				<if test="updateUser != null">#{updateUser},</if>
+				<if test="updateTime != null">#{updateTime},</if>
+			</trim>
+		)
+	</insert>
+
+	<update id="update" parameterType="DriverLicenseType">
+		update DriverLicenseType
+		<set>
+			<trim suffixOverrides=",">
+				<if test="text != null">text=#{text}, </if>
+				<if test="code != null">code=#{code}, </if>
+				<if test="status != null">status=#{status}, </if>
+				<if test="createUser != null">createUser=#{createUser}, </if>
+				<if test="createTime != null">createTime=#{createTime}, </if>
+				<if test="updateUser != null">updateUser=#{updateUser},</if>
+				<if test="updateTime != null">updateTime=#{updateTime},</if>
+			</trim>
+		</set>
+		<where>
+			<trim suffixOverrides="and">
+				<if test="id ！= null">id=#{id}</if>
+			</trim>
+		</where>
+	</update>
+	
+	<resultMap id="resultMap" type="DriverLicenseType">
+		<id property="id" column="id"/>
+		<result property="text" column="text"/>
+		<result property="code" column="code"/>
+		<result property="status" column="status"/>
+		<result property="createUser" column="createUser"/>
+		<result property="createTime" column="createTime"/>
+		<result property="updateUser" column="updateUser"/>
+		<result property="updateTime" column="updateTime"/>
+	</resultMap>
+</mapper>

@@ -22,9 +22,9 @@ import javax.servlet.http.HttpSession;
 @Controller
 public class BaseController {
 	@Autowired
-	private HttpServletRequest request;
+	public HttpServletRequest request;
 	@Autowired
-	private HttpServletResponse response;
+	public HttpServletResponse response;
 	@Autowired
-	private HttpSession session;
+	public HttpSession session;
 }

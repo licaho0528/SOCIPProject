@@ -50,7 +50,7 @@ public class RedisUtil {
 	 * @author admin
 	 * @date 2021-03-02 22:48
 	 */
-	public Object saveToRedis(String key, Class argClass) {
+	public Object getToRedis(String key, Class argClass) {
 
 		//根据 key 获取存贮在 Redis 中的 value
 		String valueJson = redisTemplate.opsForValue().get(key);
